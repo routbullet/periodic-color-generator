@@ -1,0 +1,21 @@
+.form-section{
+    & form{
+        & input{
+            border: .165rem solid #1b4468;
+            padding: .15rem;
+        }
+
+        & .error-value{
+            border: .165rem solid #b72121;
+        }
+
+        & .submit-button{
+            background-color: #00E7FF;
+            border: .065rem solid #1b4468;
+            padding: .15rem;
+            
+
+        }
+
+    }
+}
