@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { rgbToHex } from "../utils/rgbToHex";
 import "./Color.style.scss";
 
-const ColorComponent = ({ rgb, weight, index }) => {
+const ColorComponent = ({ rgb, weight, type, index }) => {
   const [copyAlert, setCopyAlert] = useState(false);
   const hexCode = rgbToHex(rgb);
   const JOIN_RGB = rgb.join(",");
@@ -14,7 +14,10 @@ const ColorComponent = ({ rgb, weight, index }) => {
       className={`color`}
       style={{ backgroundColor: `rgb(${JOIN_RGB})` }}
     >
-      <h5 className={`${index > 10 ? classes : null}`}>{weight}%</h5>
+      <h5 className={`${index > 10 ? classes : null}`}>{weight}% </h5>
+      <h5 className={`${index > 10 ? classes : null}`}>
+        {type.toString().toUpperCase()}
+      </h5>
       <h5
         onClick={() => {
           setCopyAlert(true);
