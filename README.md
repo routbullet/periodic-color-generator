@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Project Description
+This project is the experimental project for getting color code. For example: HEXADECIMAL CODE and RGB(REG GREEN BLUE).
+You can copy the color code while click on the text. Thank you!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Packages used in this project
+I used value values.js package for getting all the color code values.
+I used sass for styling.
+
+
 
 ## Available Scripts
 
