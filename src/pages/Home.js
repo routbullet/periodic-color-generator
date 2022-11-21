@@ -1,7 +1,11 @@
 import React from "react";
 
-const Home = () => {
-  return <main>Color generator home</main>;
+const HomeContainer = () => {
+  return (
+    <main>
+      <h2>Color generator home</h2>
+    </main>
+  );
 };
 
-export default Home;
+export default HomeContainer;
