@@ -36,6 +36,9 @@ const HomeContainer = () => {
             submit
           </button>
         </form>
+        <h4>
+          You can copy RGB and HEX CODE while click on the text. Thank you!
+        </h4>
       </section>
       <section className="colors-section">
         {colorList.map((colors, index) => {
