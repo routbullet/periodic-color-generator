@@ -1,5 +1,5 @@
 # Project Description
-This project is the experimental project for getting color code. For example: HEXADECIMAL CODE and RGB(REG GREEN BLUE).
+This project is the experimental project for getting color code. For example: HEXADECIMAL CODE, RGB(REG GREEN BLUE) or NAME OF COLOR(e.g. Blue).
 You can copy the color code while click on the text. Thank you!
 
 # Packages used in this project
