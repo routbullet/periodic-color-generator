@@ -28,7 +28,7 @@ const HomeContainer = () => {
           <input
             type="text"
             value={color}
-            placeholder="e.g. #fff124, rgb(29,11,14) or blue"
+            placeholder=" e.g. #fff124, rgb(29,11,14) or blue"
             onChange={(e) => setColor(e.target.value)}
             className={`${error ? "error-value" : null}`}
           />
