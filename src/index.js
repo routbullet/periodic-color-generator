@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -10,6 +11,10 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// PWA: prod-only registration. onUpdate notifies Home via window event,
+// which shows the "new version — reload" bar.
+serviceWorkerRegistration.register({
+  onUpdate: () => {
+    window.dispatchEvent(new CustomEvent("pwa-update"));
+  },
+});

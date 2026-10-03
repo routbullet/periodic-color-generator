@@ -1,3 +1,35 @@
 .app-container {
-  text-align: center;
+  width: min(1120px, 100% - 2rem);
+  margin-inline: auto;
+  padding-block: 2.5rem 3rem;
+  text-align: left;
+}
+
+.app-footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.app-footer .credit strong {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.app-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, filter 0.15s ease;
+}
+
+.app-footer a:hover {
+  filter: brightness(1.15);
+  border-bottom-color: var(--accent);
 }
